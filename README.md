@@ -35,6 +35,7 @@ Yönetici Girişi: Yönetici paneline giriş yaparak ürün yönetimi gerçekle�
 Ekran Görüntüleri
 
 Ana Sayfa: Kategoriler ve ürün listesi
+
 ![image](https://github.com/user-attachments/assets/b2237c1d-68fc-47a0-bb6c-5ee9ab0b8585)
 ![image](https://github.com/user-attachments/assets/6c36c38d-dcb8-42cf-9cb5-1008bf804ba1)
 ![image](https://github.com/user-attachments/assets/8b299dc5-fb5f-4a4b-b3d8-2bafd315cda0)
@@ -42,6 +43,7 @@ Ana Sayfa: Kategoriler ve ürün listesi
 
 
 Ürün Detay Sayfası: Ürün bilgileri ve satın alma butonu
+
 ![image](https://github.com/user-attachments/assets/ed00e8a5-0a93-47bc-b1c3-0efcdf3ad919)
 ![image](https://github.com/user-attachments/assets/27bc6973-2bcc-49b9-90c6-c1dda74d7ee1)
 
