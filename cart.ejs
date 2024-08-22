@@ -1,0 +1,330 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Sepet</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    
+
+    <!-- All css files are included here. -->
+    <!-- Bootstrap fremwork main css -->
+    <link rel="stylesheet" href="../../assets/public/css/bootstrap.min.css">
+    <!-- Owl Carousel min css -->
+    <link rel="stylesheet" href="../../assets/public/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../../assets/public/css/owl.theme.default.min.css">
+    <!-- This core.css file contents all plugings css file. -->
+    <link rel="stylesheet" href="../../assets/public/css/core.css">
+    <!-- Theme shortcodes/elements style -->
+    <link rel="stylesheet" href="../../assets/public/css/shortcode/shortcodes.css">
+    <!-- Theme main style -->
+    <link rel="stylesheet" href="../../assets/public/style.css">
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="../../assets/public/css/responsive.css">
+    <!-- User style -->
+    <link rel="stylesheet" href="../../assets/public/css/custom.css">
+
+
+    <!-- Modernizr JS -->
+    <script src="../../assets/public/js/vendor/modernizr-3.5.0.min.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->  
+
+    <!-- Body main wrapper start -->
+    <div class="wrapper">
+        <!-- Start Header Style -->
+        <header id="htc__header" class="htc__header__area header--one">
+            <!-- Start Mainmenu Area -->
+            <div id="sticky-header-with-topbar" class="mainmenu__wrap sticky__header">
+                <div class="container">
+                    <div class="row">
+                        <div class="menumenu__container clearfix">
+                            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-5">
+                                <div class="logo">
+                                    <a href="/"><img src="https://eyupmodesa.com.tr/img/firmalar/b/h_1490271476_Mobilya-Tasarim-Evi.jpg" alt="logo images"></a>
+                                </div>
+                            </div>
+                            <div class="col-md-7 col-lg-8 col-sm-5 col-xs-3">
+                                <nav class="main__menu__nav hidden-xs hidden-sm">
+                                    <ul class="main__menu">
+                                        <li class="drop"><a href="/dashboard">Anasyafa</a></li>
+                                        <li><a href="/contact">İletişim</a></li>
+                                    </ul>
+                                </nav>
+
+                                <div class="mobile-menu clearfix visible-xs visible-sm">
+                                    <nav id="mobile_dropdown">
+                                        <ul>
+                                            <li><a href="/dashboard">Anasyafa</a></li>
+                                            <li><a href="/contact">İletişim</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-lg-2 col-sm-4 col-xs-4">
+                                <div class="header__right">
+                                    <div class="header__search search search__open">
+                                        <a href="#"><i class="icon-magnifier icons"></i></a>
+                                    </div>
+                                   
+                                    <div class="header__account dropdown">
+                                        <a href="#" id="account-icon" class="dropdown-toggle" role="button"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="icon-user icons"></i>
+                                        </a>
+                                        
+                                        <div class="dropdown-menu" aria-labelledby="account-icon">
+                                           
+                                                <a class="dropdown-item" href="/siparisler">siparişler</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="/logout">Çıkış Yap</a>
+                                                <a class="dropdown-item" href="/login">Giriş yap</a>
+                                           
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile-menu-area"></div>
+                </div>
+            </div>
+            <!-- End Mainmenu Area -->
+        </header>
+       
+        <!-- End Header Area -->
+
+        <div class="body__overlay"></div>
+        <!-- Start Offset Wrapper -->
+        <div class="offset__wrapper">
+            <!-- Start Search Popap -->
+            <div class="search__area">
+                <div class="container" >
+                    <div class="row" >
+                        <div class="col-md-12" >
+                            <div class="search__inner">
+                                <form action="#" method="get">
+                                    <input placeholder="Ara ... " type="text">
+                                    <button type="submit"></button>
+                                </form>
+                                <div class="search__close__btn">
+                                    <span class="search__close__btn_icon"><i class="zmdi zmdi-close"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Search Popap -->
+            <!-- Start Cart Panel -->
+           
+            <!-- End Cart Panel -->
+        </div>
+        <!-- End Offset Wrapper -->
+        
+        <!-- cart-main-area start -->
+        <div class="cart-main-area ptb--100 bg__white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <form action="/payment" method="POST" id="paymentForm">               
+                            <div class="table-content table-responsive">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th class="product-thumbnail">Ürünler</th>
+                                            <th class="product-name">Ürün Adı</th>
+                                            <th class="product-price">Fiyat</th>
+                                            <th class="product-quantity">Adet</th>
+                                            <th class="product-subtotal">Toplam</th>
+                                            <th class="product-remove">Kaldır</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="cartItemsContainer">
+                                        <!-- Sepet öğeleri buraya eklenecek -->
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                            
+                            <div class="col-md-12 col-sm-12 col-xs-12 smt-10 xmt-1s0">
+                                <div class="htc__cart__total">
+                                    <h6>Toplam Ödeme</h6>
+                                    <div class="cart__desk__list">
+                                        <ul class="cart__desc">
+                                            <li>Toplam Ödeme</li>
+                                            <li>Nakliye</li>
+                                        </ul>
+                                        <ul class="cart__price">
+                                            <li id="cartTotal">₺0.00</li>
+                                            <li id="shipping">₺100.00</li>
+                                        </ul>
+                                    </div>
+                                    <div class="cart__total">
+                                        <span>Sipariş Tutarı</span>
+                                        <span id="orderTotal">₺1110.00</span>
+                                    </div>
+                                    <ul class="payment__btn">
+                                        <li class="active">
+                                            <a href="">
+                                            <input type="submit" value="Öde">
+                                        </a>
+                                        </li>
+                                        <li><a href="/dashboard">Alışverişe Devam</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </form>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- cart-main-area end -->
+       
+        <!-- Start Banner Area -->
+
+        <!-- End Banner Area -->
+        <!-- End Banner Area -->
+        <!-- Start Footer Area -->
+        <footer id="htc__footer">
+            <!-- Start Footer Widget -->
+            <div class="footer__container bg__cat--1">
+                <div class="container">
+                    <div class="row">
+                        <!-- Start Single Footer Widget -->
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer">
+                                <h2 class="title__line--2">Hakkımızda</h2>
+                                <div class="ft__details">
+                                    <p>Evinize şıklık ve konfor katacak mobilya koleksiyonumuzla sizlere hizmet vermekten gurur duyuyoruz. Kaliteli ve estetik tasarımlarımızla yaşam alanlarınızı güzelleştiriyoruz. Hayalinizdeki evi yaratmanız için buradayız.</p>
+                                    <div class="ft__social__link">
+                                        <ul class="social__link">
+                                            <li><a href="#"><i class="icon-social-twitter icons"></i></a></li>
+                                            <li><a href="#"><i class="icon-social-instagram icons"></i></a></li>
+                                            <li><a href="#"><i class="icon-social-facebook icons"></i></a></li>
+                                            <li><a href="#"><i class="icon-social-google icons"></i></a></li>
+                                            <li><a href="#"><i class="icon-social-linkedin icons"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Footer Widget -->
+                        <!-- Start Single Footer Widget -->
+                        <div class="col-md-2 col-sm-6 col-xs-12 xmt-40">
+                            <div class="footer">
+                                <h2 class="title__line--2">Bilgi</h2>
+                                <div class="ft__inner">
+                                    <ul class="ft__list">
+                                        <li><a href="#">Hakkımızda</a></li>
+                                        <li><a href="#">Teslimat Bilgisi</a></li>
+                                        <li><a href="#">Gizlilik ve Güvenlik</a></li>
+                                        <li><a href="#">Şartlar ve Koşullar</a></li>
+                                        <li><a href="#">Üreticiler</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Footer Widget -->
+                        <!-- Start Single Footer Widget -->
+                        <div class="col-md-2 col-sm-6 col-xs-12 xmt-40 smt-40">
+                            <div class="footer">
+                                <h2 class="title__line--2">Hesabım</h2>
+                                <div class="ft__inner">
+                                    <ul class="ft__list">
+                                        <li><a href="/cart">Sepetim</a></li>
+                                        <li><a href="/loging">Giriş Yap</a></li>
+                                        <li><a href="/payment">Ödeme</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Footer Widget -->
+                        <!-- Start Single Footer Widget -->
+                        <div class="col-md-2 col-sm-6 col-xs-12 xmt-40 smt-40">
+                            <div class="footer">
+                                <h2 class="title__line--2">Hizmetlerimiz</h2>
+                                <div class="ft__inner">
+                                    <ul class="ft__list">
+                                        <li><a href="/login">Sepetim</a></li>
+                                        <li><a href="/login">Giriş Yap</a></li>
+                                        <li><a href="/login">Favorilerim</a></li>
+                                        <li><a href="/login">Ödeme</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Footer Widget -->
+                        <!-- Start Single Footer Widget -->
+                        <div class="col-md-3 col-sm-6 col-xs-12 xmt-40 smt-40">
+                            <div class="footer">
+                                <h2 class="title__line--2">Bülten</h2>
+                                <div class="ft__inner">
+                                    <div class="news__input">
+                                        <input type="text" placeholder="E-posta Adresiniz*">
+                                        <div class="send__btn">
+                                            <a class="fr__btn" href="#">E-posta Gönder</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Footer Widget -->
+                    </div>
+                </div>
+            </div>
+            <!-- End Footer Widget -->
+            <!-- Start Copyright Area -->
+            <div class="htc__copyright bg__cat--5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="copyright__inner">
+                                <p>Copyright© <a href=""></a> 2024. Tüm hakları saklıdır.</p>
+                                <a href="#"><img src="" alt="ödeme yöntemleri"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Copyright Area -->
+        </footer>
+        <!-- End Footer Style -->
+    </div>
+  
+    
+    <!--<script src="../../assets/function.js"></script>  
+        Placed js at the end of the document so the pages load faster -->
+    <script src="../../assets/basket.js"></script>
+    <!-- jquery latest version -->
+    <script src="../../assets/public/js/vendor/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap framework js -->
+    <script src="../../assets/public/js/bootstrap.min.js"></script>
+    <!-- All js plugins included in this file. -->
+    <script src="../../assets/public/js/plugins.js"></script>
+    <script src="../../assets/public/js/slick.min.js"></script>
+    <script src="../../assets/public/js/owl.carousel.min.js"></script>
+    <!-- Waypoints.min.js. -->
+    <script src="../../assets/public/js/waypoints.min.js"></script>
+    <!-- Main js file that contents all jQuery plugins activation. -->
+    <script src="../../assets/public/js/main.js"></script>
+        
+</body>
+
+</html>

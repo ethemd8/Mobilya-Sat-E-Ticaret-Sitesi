@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Giriş</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="../../assets/plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../assets/dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="../../assets/public/style.css">
+</head>
+<body>
+  <ul>
+    <% if (typeof errors != 'undefined') { %> <% errors.forEach(error => { %>
+    <li><%= error.message %></li>
+    <% }) %> <% } %>
+  </ul>
+  
+    <br><br><br>
+    <br><br><br>
+
+    <div class="col-md-20">
+    <div class="card card-info">
+      <div class="card-header">
+        <h3 class="card-title">Kullanıcı kayıt</h3>
+      </div>
+      <!-- /.card-header -->
+      <!-- form start -->
+      <form action="/sign_in" method="POST" class="form-horizontal" id="registrationForm">
+        <div class="card-body">
+          <div class="form-group row">
+            <label for="ad" class="col-sm-2 col-form-label">Ad</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="ad" name="first_name" placeholder="İsim">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="soyad" class="col-sm-2 col-form-label">Soyad</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="soyad" name="last_name" placeholder="Soyad">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="tel" class="col-sm-2 col-form-label">Telefon</label>
+            <div class="col-sm-10">
+              <input type="phone" class="form-control" id="tel" name="phone" placeholder="Telefon Numarası">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="inputEmail3" name="email" placeholder="Email">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputPassword3" class="col-sm-2 col-form-label">Şifre</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword3" name="password" placeholder="Şifre">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputPasswordRepeat" class="col-sm-2 col-form-label">Şifre Tekrarı</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPasswordRepeat" name="password_repeat" placeholder="Şifre Tekrarı">
+            </div>
+          </div>
+        </div>
+        <!-- /.card-body -->
+        <div class="card-footer">
+          <button type="submit" class="btn btn-info">Kayıt Ol</button>
+        </div>
+        <!-- /.card-footer -->
+      </form>
+      
+      
+    </div>
+    <!-- /.card -->
+    
+</div>
+<br><br><br>
+<br><br><br>
+  <!-- REQUIRED SCRIPTS -->
+
+  <!-- jQuery -->
+  <script src="../../assets/plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="../../assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="../../assets/dist/js/adminlte.min.js"></script>
+</body>
+</html>
